@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# dbt
+ecommerce_dbt/target/
+ecommerce_dbt/logs/
+ecommerce_dbt/dbt_packages/
+ecommerce_dbt/.user.yml
+
+# Airflow
+airflow/logs/*
+airflow/__pycache__/
+airflow/dags/__pycache__/
+
+# Python / tool caches
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+logs/
+airflow/dbt_profiles/profiles.yml

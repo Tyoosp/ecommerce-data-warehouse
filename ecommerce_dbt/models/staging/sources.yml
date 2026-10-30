@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw e-commerce data loaded from Olist CSV files into PostgreSQL."
+
+    schema: raw
+
+    tables:
+      - name: customers
+        description: "Raw customer data from Olist."
+
+      - name: orders
+        description: "Raw order transaction data."
+
+      - name: order_items
+        description: "Raw order item data."
+
+      - name: order_payments
+        description: "Raw payment data."
+
+      - name: order_reviews
+        description: "Raw customer review data."
+
+      - name: products
+        description: "Raw product data."
+
+      - name: sellers
+        description: "Raw seller data."
+
+      - name: geolocation
+        description: "Raw Brazilian geolocation data."
+
+      - name: product_category_translation
+        description: "Raw product category translation data."
